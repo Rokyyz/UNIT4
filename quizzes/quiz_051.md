@@ -3,7 +3,8 @@
 
 # 1. UML Diagram
 
-N/A since no classes
+![CommSci 41](https://github.com/Rokyyz/UNIT4/assets/134658259/c7fa0ddd-fb1e-43ea-bfeb-89eb2172154d)
+
 
 # 2. solutions
 
@@ -44,4 +45,5 @@ print_object_info(flight)
 ```
 
 # 3. proof of work
+<img width="1440" alt="Screenshot 2024-04-01 at 13 35 40" src="https://github.com/Rokyyz/UNIT4/assets/134658259/1faa86f8-c74f-4bf5-b337-dc93bfb9e915">
 
