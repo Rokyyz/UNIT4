@@ -1,0 +1,22 @@
+/*all h1 elements*/
+
+h1{
+    font-family: sans-serif;
+    color: red;
+
+}
+/* all elements with class black-btn*/
+.black-btn{
+    background-color: black;
+    color: white;
+
+}
+
+/*Set the attributes for only the element with id my_btn*/
+#my_btn{
+    text-transform: uppercase;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+}
