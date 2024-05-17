@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All foods in the database</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css">
+    <link rel="stylesheet" href="/static/my_style.css">
+
+</head>
+<body class = "content">
+<a class = "btn btn-danger" href="{{ url_for('logout') }}">Logout</a>
+<h1 id = "my_btn"> Hi {{ name }}, List of foods available</h1>
+<table class = "table">
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Cuisine</th>
+        <th>Price</th>
+        <th>See</th>
+    </tr>
+    {% for f in foods %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ f[1] }}</td>
+        <td>{{ f[2] }}</td>
+        <td>{{ f[4] }}</td>
+        <td>{{ f[3] }}</td>
+        <td><a href="{{ url_for('get_food', food_id=f[0]) }}">See</a></td>
+    </tr>
+    {%  endfor %}
+
+</table>
+</body>
+</html>
